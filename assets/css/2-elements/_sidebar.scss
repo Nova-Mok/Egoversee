@@ -1,0 +1,156 @@
+.gaming__sidebar {
+    height: calc(100vh - 160px);
+    min-height: 550px;
+    margin-top: 160px;
+    width: max-content;
+    background-color: white;
+    padding: 22.29px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    // border-radius: 0 0 20px 0;
+    box-shadow: $shadow_1;
+    border: solid 1px $color_stroke;
+    border-top: none;
+    position: fixed;
+    @include lg {
+        padding: 20px;
+        margin-right: 0;
+        flex-direction: row;
+        height: auto;
+        min-height: auto;
+        width: 100%;
+    }
+    @include tablet_vert_screen {
+        position: relative;
+        height: auto;
+        margin-top: 150px;
+    }
+    @include sm {
+        padding: 20px;
+    }
+    .content__box {
+        @include lg {
+            display: flex;
+        }
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+            @include lg {
+                margin-right: 30px;
+                margin-bottom: 0;
+                &:last-of-type {
+                    margin-right: 0;
+                }
+            }
+            @include sm {
+                margin-right: 20px;
+            }
+            .icon {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                box-shadow: 0px 10px 11px -2px rgba(219, 116, 255, 0.22);
+                @include sm {
+                    width: 40px;
+                    height: 40px;
+                }
+                i {
+                    color: white;
+                    font-size: 18px;
+                    font-weight: normal;
+                    @include sm {
+                        font-size: 18px;
+                    }
+                }
+            }
+            &.home {
+                .icon {
+                    background: $color_grad;
+                }
+            }
+            &.market {
+                .icon {
+                    background: $color_grad1;
+                }
+            }
+            &.create {
+                .icon {
+                    background: $color_grad2;
+                }
+            }
+            &.about {
+                .icon {
+                    background: $color_grad3;
+                }
+            }
+            .page_name {
+                color: $color_black;
+                font-size: 16px;
+            }
+        }
+    }
+    .avatars {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .avatar_sidebar {
+            width: 46px;
+            height: 46px;
+            border: none;
+            @include sm {
+                width: 40px;
+                height: 40px;
+            }
+        }
+        .name {
+            color: $color_brand;
+            font-size: 16px;
+        }
+    }
+}
+
+
+.sidebar__filter {
+    margin-top: 180px;
+    .Applied__Filter {
+        width: 100%;
+    }
+    .Clear__All {
+        display: flex;
+        justify-content: flex-end;
+        &:hover {
+            color: $color_dark;
+        }
+    }
+    .alert {
+        display: flex;
+        align-items: center;
+
+        .close {
+            font-size: 22px;
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin-left: 8px;
+            &::before {
+                top: 0;
+                width: 20px;
+                height: 20px;
+            }
+            &:hover {
+                background: transparent;
+            }
+        }
+    }
+}
