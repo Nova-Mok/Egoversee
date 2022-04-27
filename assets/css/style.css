@@ -724,7 +724,7 @@ img {
 
 .space-y-30 > :not([hidden]) ~ :not([hidden]) {
   --cb-space-y-reverse: 0;
-  margin-top: calc(30px * calc(1 - var(--cb-space-y-reverse)));
+  margin-top: calc(100px * calc(1 - var(--cb-space-y-reverse)));
   margin-bottom: calc(30px * var(--cb-space-y-reverse));
 }
 
@@ -15620,7 +15620,7 @@ label:active:after {
   overflow: hidden;
   position: relative;
   width: 100%;
-  margin-top: 180px;
+  margin-top: 50px;
 }
 
 .hero__5 .swiper_games {
