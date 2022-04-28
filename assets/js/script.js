@@ -92,16 +92,16 @@ $(".dark").on('click', function (e) {
 	$(".body").addClass("is__dark")
 	$(".light").removeClass("is_active")
 	$(".dark").addClass("is_active")
-	document.getElementById("logo_js").src = "assets/img/logos/Logo_white.svg";
-	document.getElementById("logo_js_f").src = "assets/img/logos/Logo_white.svg";
+	document.getElementById("logo_js").src = "assets/img/icons/logo.png";
+	document.getElementById("logo_js_f").src = "assets/img/icons/logo.png";
 
 });
 $(".light").on('click', function (e) {
 	$(".body").removeClass("is__dark")
 	$(".light").addClass("is_active")
 	$(".dark").removeClass("is_active")
-	document.getElementById("logo_js").src = "assets/img/logos/Logo.svg";
-	document.getElementById("logo_js_f").src = "assets/img/logos/Logo.svg";
+	document.getElementById("logo_js").src = "assets/img/icons/Logo1.png";
+	document.getElementById("logo_js_f").src = "assets/img/icons/Logo1.png";
 });
 
 // menu popup
@@ -223,11 +223,11 @@ var mySwiper = new Swiper(".swiper_games2", {
 			slidesPerView: 5,
 		},
 	},
-		// Navigation arrows
-		navigation: {
-			nextEl: ".swiper-button-next",
-			prevEl: ".swiper-button-prev",
-		},
+	// Navigation arrows
+	navigation: {
+		nextEl: ".swiper-button-next",
+		prevEl: ".swiper-button-prev",
+	},
 });
 
 var mySwiper = new Swiper(".swiper_deals", {
