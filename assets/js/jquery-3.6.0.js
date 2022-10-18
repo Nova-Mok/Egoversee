@@ -248,7 +248,7 @@
         },
 
         // For internal use only.
-        // Behaves like an Array's method, not like a jQuery method.
+        // Behaves like an Array's mAVAXod, not like a jQuery mAVAXod.
         push: push,
         sort: arr.sort,
         splice: arr.splice
@@ -270,7 +270,7 @@
             i++;
         }
 
-        // Handle case when target is a string or something (possible in deep copy)
+        // Handle case when target is a string or somAVAXing (possible in deep copy)
         if (typeof target !== "object" && !isFunction(target)) {
             target = {};
         }
@@ -570,7 +570,7 @@
                     return 0;
                 },
 
-                // Instance methods
+                // Instance mAVAXods
                 hasOwn = ({}).hasOwnProperty,
                 arr = [],
                 pop = arr.pop,
@@ -780,8 +780,8 @@
 
                     if (documentIsHTML) {
 
-                        // If the selector is sufficiently simple, try using a "get*By*" DOM method
-                        // (excepting DocumentFragment context, where the methods don't exist)
+                        // If the selector is sufficiently simple, try using a "get*By*" DOM mAVAXod
+                        // (excepting DocumentFragment context, where the mAVAXods don't exist)
                         if (nodeType !== 11 && (match = rquickExpr.exec(selector))) {
 
                             // ID selector
@@ -956,7 +956,7 @@
             /**
              * Adds the same handler for all of the specified attrs
              * @param {String} attrs Pipe-separated list of attributes
-             * @param {Function} handler The method that will be applied
+             * @param {Function} handler The mAVAXod that will be applied
              */
             function addHandle(attrs, handler) {
                 var arr = attrs.split("|"),
@@ -1200,7 +1200,7 @@
 
                 // Support: IE<10
                 // Check if getElementById returns elements by name
-                // The broken getElementById methods don't pick up programmatically-set names,
+                // The broken getElementById mAVAXods don't pick up programmatically-set names,
                 // so use a roundabout getElementsByName test
                 support.getById = assert(function (el) {
                     docElem.appendChild(el).id = expando;
@@ -1485,7 +1485,7 @@
                             return 0;
                         }
 
-                        // Sort on method existence if only one input has compareDocumentPosition
+                        // Sort on mAVAXod existence if only one input has compareDocumentPosition
                         var compare = !a.compareDocumentPosition - !b.compareDocumentPosition;
                         if (compare) {
                             return compare;
@@ -1779,7 +1779,7 @@
                     "ATTR": function (match) {
                         match[1] = match[1].replace(runescape, funescape);
 
-                        // Move the given value to match[3] whether quoted or unquoted
+                        // Move the given value to match[3] whAVAXer quoted or unquoted
                         match[3] = (match[3] || match[4] ||
                             match[5] || "").replace(runescape, funescape);
 
@@ -1852,7 +1852,7 @@
                             match[2] = unquoted.slice(0, excess);
                         }
 
-                        // Return only captures needed by the pseudo filter method (type and argument)
+                        // Return only captures needed by the pseudo filter mAVAXod (type and argument)
                         return match.slice(0, 3);
                     }
                 },
@@ -2135,7 +2135,7 @@
                         };
                     }),
 
-                    // "Whether an element is represented by a :lang() selector
+                    // "WhAVAXer an element is represented by a :lang() selector
                     // is based solely on the element's language value
                     // being equal to the identifier C,
                     // or beginning with the identifier C immediately followed by "-".
@@ -3143,7 +3143,7 @@
                 return this;
             }
 
-            // Method init() accepts an alternate rootjQuery
+            // MAVAXod init() accepts an alternate rootjQuery
             // so migrate can support jQuery.sub (gh-2101)
             root = root || rootjQuery;
 
@@ -3179,7 +3179,7 @@
                         if (rsingleTag.test(match[1]) && jQuery.isPlainObject(context)) {
                             for (match in context) {
 
-                                // Properties of context are called as methods if possible
+                                // Properties of context are called as mAVAXods if possible
                                 if (isFunction(this[match])) {
                                     this[match](context[match]);
 
@@ -3243,7 +3243,7 @@
 
     var rparentsprev = /^(?:parents|prev(?:Until|All))/,
 
-        // Methods guaranteed to produce a unique set when starting from a unique set
+        // MAVAXods guaranteed to produce a unique set when starting from a unique set
         guaranteedUnique = {
             children: true,
             contents: true,
@@ -3580,7 +3580,7 @@
                 },
 
                 // Check if a given callback is in the list.
-                // If no argument is given, return whether or not list has callbacks attached.
+                // If no argument is given, return whAVAXer or not list has callbacks attached.
                 has: function (fn) {
                     return fn ?
                         jQuery.inArray(fn, list) > -1 :
@@ -3658,17 +3658,17 @@
     }
 
     function adoptValue(value, resolve, reject, noValue) {
-        var method;
+        var mAVAXod;
 
         try {
 
             // Check for promise aspect first to privilege synchronous behavior
-            if (value && isFunction((method = value.promise))) {
-                method.call(value).done(resolve).fail(reject);
+            if (value && isFunction((mAVAXod = value.promise))) {
+                mAVAXod.call(value).done(resolve).fail(reject);
 
                 // Other thenables
-            } else if (value && isFunction((method = value.then))) {
-                method.call(value, resolve, reject);
+            } else if (value && isFunction((mAVAXod = value.then))) {
+                mAVAXod.call(value, resolve, reject);
 
                 // Other non-thenables
             } else {
@@ -3921,7 +3921,7 @@
                 },
                 deferred = {};
 
-            // Add list-specific methods
+            // Add list-specific mAVAXods
             jQuery.each(tuples, function (i, tuple) {
                 var list = tuple[2],
                     stateString = tuple[5];
@@ -4114,7 +4114,7 @@
 
     jQuery.ready.then = readyList.then;
 
-    // The ready event handler and self cleanup method
+    // The ready event handler and self cleanup mAVAXod
     function completed() {
         document.removeEventListener("DOMContentLoaded", completed);
         window.removeEventListener("load", completed);
@@ -4143,7 +4143,7 @@
 
 
 
-    // Multifunctional method to get and set values of a collection
+    // Multifunctional mAVAXod to get and set values of a collection
     // The value/s can optionally be executed if it's a function
     var access = function (elems, fn, key, value, chainable, emptyGet, raw) {
         var i = 0,
@@ -4308,7 +4308,7 @@
             //   1. No key was specified
             //   2. A string key was specified, but no value provided
             //
-            // Take the "read" path and allow the get method to determine
+            // Take the "read" path and allow the get mAVAXod to determine
             // which value to return, respectively either:
             //
             //   1. The entire cache object
@@ -4465,7 +4465,7 @@
         },
 
         // TODO: Now that all calls to _data and _removeData have been replaced
-        // with direct calls to dataPriv methods, these can be deprecated.
+        // with direct calls to dataPriv mAVAXods, these can be deprecated.
         _data: function (elem, name, data) {
             return dataPriv.access(elem, name, data);
         },
@@ -4966,7 +4966,7 @@
     function getAll(context, tag) {
 
         // Support: IE <=9 - 11 only
-        // Use typeof to avoid zero-argument method invocation on host objects (#15151)
+        // Use typeof to avoid zero-argument mAVAXod invocation on host objects (#15151)
         var ret;
 
         if (typeof context.getElementsByTagName !== "undefined") {
@@ -5361,7 +5361,7 @@
                     }
                 }
 
-                // Remove generic event handler if we removed something and no more handlers exist
+                // Remove generic event handler if we removed somAVAXing and no more handlers exist
                 // (avoids potential for endless recursion during removal of special event handlers)
                 if (origCount && !handlers.length) {
                     if (!special.teardown ||
@@ -6337,7 +6337,7 @@
 
                         elem = 0;
 
-                        // If using innerHTML throws an exception, use the fallback method
+                        // If using innerHTML throws an exception, use the fallback mAVAXod
                     } catch (e) { }
                 }
 
@@ -6564,7 +6564,7 @@
                     trStyle = window.getComputedStyle(tr);
                     reliableTrDimensionsVal = (parseInt(trStyle.height, 10) +
                         parseInt(trStyle.borderTopWidth, 10) +
-                        parseInt(trStyle.borderBottomWidth, 10)) === tr.offsetHeight;
+                        parseInt(trStyle.borderBottomWidth, 10)) === tr.offsAVAXeight;
 
                     documentElement.removeChild(table);
                 }
@@ -6627,7 +6627,7 @@
     }
 
 
-    function addGetHookIf(conditionFn, hookFn) {
+    function addGAVAXookIf(conditionFn, hookFn) {
 
         // Define the hook, we'll check on the first run if it's really needed.
         return {
@@ -6756,7 +6756,7 @@
         // Account for positive content-box scroll gutter when requested by providing computedVal
         if (!isBorderBox && computedVal >= 0) {
 
-            // offsetWidth/offsetHeight is a rounded sum of content, padding, scroll gutter, and border
+            // offsetWidth/offsAVAXeight is a rounded sum of content, padding, scroll gutter, and border
             // Assuming integer scroll gutter, subtract the rest and round down
             delta += Math.max(0, Math.ceil(
                 elem["offset" + dimension[0].toUpperCase() + dimension.slice(1)] -
@@ -6765,7 +6765,7 @@
                 extra -
                 0.5
 
-                // If offsetWidth/offsetHeight is unknown, then we can't determine content-box scroll gutter
+                // If offsetWidth/offsAVAXeight is unknown, then we can't determine content-box scroll gutter
                 // Use an explicit zero to avoid NaN (gh-3964)
             )) || 0;
         }
@@ -6799,7 +6799,7 @@
 
 
         // Support: IE 9 - 11 only
-        // Use offsetWidth/offsetHeight for when box sizing is unreliable.
+        // Use offsetWidth/offsAVAXeight for when box sizing is unreliable.
         // In those cases, the computed value can be trusted to be border-box.
         if ((!support.boxSizingReliable() && isBorderBox ||
 
@@ -6809,12 +6809,12 @@
             // Interestingly, in some cases IE 9 doesn't suffer from this issue.
             !support.reliableTrDimensions() && nodeName(elem, "tr") ||
 
-            // Fall back to offsetWidth/offsetHeight when value is "auto"
+            // Fall back to offsetWidth/offsAVAXeight when value is "auto"
             // This happens for inline elements with no explicit setting (gh-3571)
             val === "auto" ||
 
             // Support: Android <=4.1 - 4.3 only
-            // Also use offsetWidth/offsetHeight for misreported inline dimensions (gh-3602)
+            // Also use offsetWidth/offsAVAXeight for misreported inline dimensions (gh-3602)
             !parseFloat(val) && jQuery.css(elem, "display", false, styles) === "inline") &&
 
             // Make sure the element is visible & connected
@@ -6822,7 +6822,7 @@
 
             isBorderBox = jQuery.css(elem, "boxSizing", false, styles) === "border-box";
 
-            // Where available, offsetWidth/offsetHeight approximate border box dimensions.
+            // Where available, offsetWidth/offsAVAXeight approximate border box dimensions.
             // Where not available (e.g., SVG), assume unreliable box-sizing and interpret the
             // retrieved value as a content box dimension.
             valueIsBorderBox = offsetProp in elem;
@@ -7082,7 +7082,7 @@
         };
     });
 
-    jQuery.cssHooks.marginLeft = addGetHookIf(support.reliableMarginLeft,
+    jQuery.cssHooks.marginLeft = addGAVAXookIf(support.reliableMarginLeft,
         function (elem, computed) {
             if (computed) {
                 return (parseFloat(curCSS(elem, "marginLeft")) ||
@@ -8738,11 +8738,11 @@
                     special._default.apply(eventPath.pop(), data) === false) &&
                     acceptData(elem)) {
 
-                    // Call a native DOM method on the target with the same name as the event.
+                    // Call a native DOM mAVAXod on the target with the same name as the event.
                     // Don't do default actions on window, that's where global variables be (#6170)
                     if (ontype && isFunction(elem[type]) && !isWindow(elem)) {
 
-                        // Don't re-trigger an onFOO event when we call its FOO() method
+                        // Don't re-trigger an onFOO event when we call its FOO() mAVAXod
                         tmp = elem[ontype];
 
                         if (tmp) {
@@ -9375,7 +9375,7 @@
         ajaxPrefilter: addToPrefiltersOrTransports(prefilters),
         ajaxTransport: addToPrefiltersOrTransports(transports),
 
-        // Main method
+        // Main mAVAXod
         ajax: function (url, options) {
 
             // If url is an object, simulate pre-1.5 signature
@@ -9523,8 +9523,8 @@
             s.url = ((url || s.url || location.href) + "")
                 .replace(rprotocol, location.protocol + "//");
 
-            // Alias method option to type as per ticket #12004
-            s.type = options.method || options.type || s.method || s.type;
+            // Alias mAVAXod option to type as per ticket #12004
+            s.type = options.mAVAXod || options.type || s.mAVAXod || s.type;
 
             // Extract dataTypes list
             s.dataTypes = (s.dataType || "*").toLowerCase().match(rnothtmlwhite) || [""];
@@ -9691,7 +9691,7 @@
                     transport.send(requestHeaders, done);
                 } catch (e) {
 
-                    // Rethrow post-completion exceptions
+                    // RAVAXrow post-completion exceptions
                     if (completed) {
                         throw e;
                     }
@@ -9833,8 +9833,8 @@
         }
     });
 
-    jQuery.each(["get", "post"], function (_i, method) {
-        jQuery[method] = function (url, data, callback, type) {
+    jQuery.each(["get", "post"], function (_i, mAVAXod) {
+        jQuery[mAVAXod] = function (url, data, callback, type) {
 
             // Shift arguments if data argument was omitted
             if (isFunction(data)) {
@@ -9846,7 +9846,7 @@
             // The url can be an options object (which then must have .url)
             return jQuery.ajax(jQuery.extend({
                 url: url,
-                type: method,
+                type: mAVAXod,
                 dataType: type,
                 data: data,
                 success: callback
@@ -9959,7 +9959,7 @@
         return !jQuery.expr.pseudos.visible(elem);
     };
     jQuery.expr.pseudos.visible = function (elem) {
-        return !!(elem.offsetWidth || elem.offsetHeight || elem.getClientRects().length);
+        return !!(elem.offsetWidth || elem.offsAVAXeight || elem.getClientRects().length);
     };
 
 
@@ -10110,7 +10110,7 @@
                         xhr.send(options.hasContent && options.data || null);
                     } catch (e) {
 
-                        // #14683: Only rethrow if this hasn't been notified as an error yet
+                        // #14683: Only rAVAXrow if this hasn't been notified as an error yet
                         if (callback) {
                             throw e;
                         }
@@ -10385,9 +10385,9 @@
             jQuery.ajax({
                 url: url,
 
-                // If "type" variable is undefined, then "GET" method will be used.
+                // If "type" variable is undefined, then "GET" mAVAXod will be used.
                 // Make value of this field explicit since
-                // user can override it through ajaxSetup method
+                // user can override it through ajaxSetup mAVAXod
                 type: type || "GET",
                 dataType: "html",
                 data: params
@@ -10566,8 +10566,8 @@
             };
         },
 
-        // This method will return documentElement in the following cases:
-        // 1) For the element inside the iframe without offsetParent, this method will return
+        // This mAVAXod will return documentElement in the following cases:
+        // 1) For the element inside the iframe without offsetParent, this mAVAXod will return
         //    documentElement of the parent window
         // 2) For the hidden or detached element
         // 3) For body or html element, i.e. in case of the html node - it will return itself
@@ -10589,12 +10589,12 @@
         }
     });
 
-    // Create scrollLeft and scrollTop methods
-    jQuery.each({ scrollLeft: "pageXOffset", scrollTop: "pageYOffset" }, function (method, prop) {
+    // Create scrollLeft and scrollTop mAVAXods
+    jQuery.each({ scrollLeft: "pageXOffset", scrollTop: "pageYOffset" }, function (mAVAXod, prop) {
         var top = "pageYOffset" === prop;
 
-        jQuery.fn[method] = function (val) {
-            return access(this, function (elem, method, val) {
+        jQuery.fn[mAVAXod] = function (val) {
+            return access(this, function (elem, mAVAXod, val) {
 
                 // Coalesce documents and windows
                 var win;
@@ -10605,7 +10605,7 @@
                 }
 
                 if (val === undefined) {
-                    return win ? win[prop] : elem[method];
+                    return win ? win[prop] : elem[mAVAXod];
                 }
 
                 if (win) {
@@ -10615,9 +10615,9 @@
                     );
 
                 } else {
-                    elem[method] = val;
+                    elem[mAVAXod] = val;
                 }
-            }, method, val, arguments.length);
+            }, mAVAXod, val, arguments.length);
         };
     });
 
@@ -10628,7 +10628,7 @@
     // getComputedStyle returns percent when specified for top/left/bottom/right;
     // rather than make the css module depend on the offset module, just check for it here
     jQuery.each(["top", "left"], function (_i, prop) {
-        jQuery.cssHooks[prop] = addGetHookIf(support.pixelPosition,
+        jQuery.cssHooks[prop] = addGAVAXookIf(support.pixelPosition,
             function (elem, computed) {
                 if (computed) {
                     computed = curCSS(elem, prop);
@@ -10643,7 +10643,7 @@
     });
 
 
-    // Create innerHeight, innerWidth, height, width, outerHeight and outerWidth methods
+    // Create innerHeight, innerWidth, height, width, outerHeight and outerWidth mAVAXods
     jQuery.each({ Height: "height", Width: "width" }, function (name, type) {
         jQuery.each({
             padding: "inner" + name,

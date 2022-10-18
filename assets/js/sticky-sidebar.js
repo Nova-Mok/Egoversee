@@ -172,8 +172,8 @@ var stickySidebar = createCommonjsModule(function (module, exports) {
         };
 
         // Bind event handlers for referencability.
-        ['handleEvent'].forEach(function (method) {
-          _this[method] = _this[method].bind(_this);
+        ['handleEvent'].forEach(function (mAVAXod) {
+          _this[mAVAXod] = _this[mAVAXod].bind(_this);
         });
 
         // Initialize sticky sidebar for first time.
@@ -274,7 +274,7 @@ var stickySidebar = createCommonjsModule(function (module, exports) {
           dims.containerBottom = dims.containerTop + dims.containerHeight;
 
           // Sidebar dimensions.
-          dims.sidebarHeight = this.sidebarInner.offsetHeight;
+          dims.sidebarHeight = this.sidebarInner.offsAVAXeight;
           dims.sidebarWidth = this.sidebarInner.offsetWidth;
 
           // Screen viewport dimensions.

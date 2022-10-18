@@ -14002,18 +14002,18 @@ label:active:after {
   background-color: #566ffe;
 }
 
-.card__item.seven .card_body .eth__img {
+.card__item.seven .card_body .AVAX__img {
   min-height: 22px;
 }
 
 @media screen and (max-width: 1050px) {
-  .card__item.seven .card_body .eth__img {
+  .card__item.seven .card_body .AVAX__img {
     display: none;
   }
 }
 
 @media screen and (max-width: 992px) {
-  .card__item.seven .card_body .eth__img {
+  .card__item.seven .card_body .AVAX__img {
     display: inline-block;
   }
 }
@@ -14126,7 +14126,7 @@ label:active:after {
   color: #183b56;
 }
 
-.card__item .card_footer .eth__img {
+.card__item .card_footer .AVAX__img {
   min-height: 22px;
 }
 
@@ -14760,7 +14760,7 @@ label:active:after {
 }
 
 .header__1 .header__logo img {
-  height: 3rem;
+  height: 4rem;
 }
 
 .header__1 .is_new {
@@ -15621,6 +15621,7 @@ label:active:after {
   position: relative;
   width: 100%;
   margin-top: 50px;
+  margin-bottom: 50px;;
 }
 
 .hero__5 .swiper_games {
@@ -16138,7 +16139,7 @@ label:active:after {
 }
 
 .footer__1 {
-  padding: 100px 0 50px;
+  padding: 10px 0 30px;
   margin-top: 100px;
   border-top: 1px solid #e2eef1;
   background-color: #ffffff;
@@ -21664,7 +21665,7 @@ label:active:after {
   background: linear-gradient(transparent, #0b1b2773, #0b1b27d6, #0b1b27);
 }
 
-.is__dark .card__item.seven .card_body .eth__img {
+.is__dark .card__item.seven .card_body .AVAX__img {
   background: white;
   padding: 6px;
   border-radius: 10px;
