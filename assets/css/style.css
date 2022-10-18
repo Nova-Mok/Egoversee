@@ -21167,19 +21167,19 @@ label:active:after {
   content: none;
 }
 
-.raroin_purchase {
+.Egoverse_purchase {
   position: fixed;
   left: 20px;
   bottom: 20px;
   z-index: 999;
 }
 
-.raroin_purchase .btn_purch {
+.Egoverse_purchase .btn_purch {
   position: relative;
   overflow: visible;
 }
 
-.raroin_purchase .btn_purch .icon {
+.Egoverse_purchase .btn_purch .icon {
   width: 45px;
   height: 45px;
   display: -webkit-inline-box;
@@ -21196,11 +21196,11 @@ label:active:after {
   vertical-align: sub;
 }
 
-.raroin_purchase .btn_purch .icon img {
+.Egoverse_purchase .btn_purch .icon img {
   width: 18px;
 }
 
-.raroin_purchase .btn_purch .icon:before {
+.Egoverse_purchase .btn_purch .icon:before {
   content: "";
   width: 60px;
   height: 60px;
