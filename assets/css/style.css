@@ -11184,8 +11184,8 @@ span.button:focus,
 div.button:hover,
 div.button:focus {
   color: #fff;
-  background-color: #566ffe;
-  border-color: #566ffe;
+  background-color: #9457eb;
+  border-color: #9457eb;
   opacity: 0.9;
   outline: none;
   -webkit-box-shadow: inherit;
@@ -11311,7 +11311,7 @@ input[type="submit"].btn-outline:hover,
 input[type="submit"].btn-outline:focus,
 a.btn-outline:hover,
 a.btn-outline:focus {
-  background-color: #566ffe;
+  background-color: #9457eb;
   color: #fff;
 }
 
@@ -11458,7 +11458,7 @@ a.btn-outline.disabled:hover {
   border: none !important;
   -webkit-transition: all 0.4s ease-in-out !important;
   transition: all 0.4s ease-in-out !important;
-  background: #566ffe !important;
+  background: #8a2be2 !important;
   position: relative;
   position: relative;
 }
