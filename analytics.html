@@ -1,0 +1,649 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="title" content="Pixeldust" />
+		<meta name="description" content="Egoverse NFT Marketplace" />
+		<meta
+			name="keywords"
+			content="bootstrap, Egoverse , bootstrap5, sass, html5"
+			/>
+		<meta name="robots" content="index, follow" />
+		<meta name="language" content="English" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title> Analytics </title>
+		<meta name="msapplication-TileColor" content="#da532c" />
+		<meta name="theme-color" content="#ffffff" />
+		<!-- 🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈 STYLES -->
+		<link rel="stylesheet" href="assets/css/plugins/remixicon.css" />
+		<link
+			rel="stylesheet"
+			href="assets/css/plugins/bootstrap.min.css"
+			/>
+		<link
+			rel="stylesheet"
+			href="assets/css/plugins/swiper-bundle.min.css"
+			/>
+		<link rel="stylesheet" href="assets/css/style.css" />
+	</head>
+	<body class="body">
+
+		<div class="overflow-hidden">
+
+			<div class="bg-dark py-10">
+				<div class="container">
+					<div
+						class="text-center
+						d-flex
+						justify-content-between
+						space-x-10
+						align-items-center">
+						<div class="space-x-10 d-flex align-items-center">
+							<lottie-player
+								src="https://assets6.lottiefiles.com/private_files/lf30_kqshlcsx.json"
+								background="transparent"
+								speed="2"
+								style="width: 50px; height: 50px"
+								loop
+								autoplay></lottie-player>
+							<p class="color_white">
+								Dark mode is now
+								<span style="color: rgb(0, 255, 170)">Available </span>
+							</p>
+						</div>
+
+						<div class="mode_switcher space-x-10">
+							<a href="#" class="light d-flex align-items-center is_active">
+								<i class="ri-sun-fill"></i> Light
+							</a>
+							<a href="#" class="dark d-flex align-items-center">
+								<i class="ri-moon-fill"></i> Dark
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			
+			<header class="header__1 js-header" id="header">
+				<div class="container">
+					<div class="wrapper js-header-wrapper">
+						<div class="header__logo">
+							<a href="/">
+								<img
+									class="header__logo"
+									id="logo_js"
+									src="./assets/img/logos/egologo.png"
+									alt="logo"
+									/>
+							</a>
+						</div>
+			
+						<!-- ==================  -->
+						<div class="header__menu">
+							<ul class="d-flex space-x-20">
+								<li class="has_popup">
+									<a class="color_black is_new" href="#">Home <i class=""></i></a>
+								</li>							
+							</ul>
+						</div>
+						<!-- ================= -->
+						<div class="header__search">
+							<input type="text" placeholder="Search" />
+							<button class="header__result">
+								<i class="ri-search-line"></i>
+							</button>
+						</div>
+						<div class="header__btns">
+							<a class="btn btn-grad btn-sm" href="Connect-wallet.html">
+								<i class="ri-wallet-3-line"></i>
+								Connect wallet</a>
+							<a href="" id="connectbtn">
+								<img width="45" src="assets/img/icons/metamask.svg" alt="">
+							</a>
+						</div>
+						<div class="header__burger js-header-burger"></div>
+			
+						<div class="header__mobile js-header-mobile">
+							<div class="header__mobile__menu space-y-40">
+								<ul class="d-flex space-y-20">
+									<li> <a class="color_black" href="Marketplace.html"> Marketplace</a> </li>
+									<li> <a class="color_black" href="Collections.html"> Collections</a> </li>
+									<li> <a class="color_black" href="Profile.html"> Profile</a> </li>
+									<li> <a class="color_black" href="Creators.html"> Creators</a> </li>
+						
+								</ul>
+								<div class="space-y-20">
+									<div class="header__search in_mobile w-full">
+										<input type="text" placeholder="Search" />
+										<button class="header__result">
+											<i class="ri-search-line"></i>
+										</button>
+									</div>
+									<a class="btn btn-grad btn-sm" href="Connect-wallet.html">Connect
+										wallet</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+			
+			<!-- ====== headers -->
+			<header class="header__1 js-header header_wallet" id="header_admin">
+				<div class="container">
+					<div class="wrapper js-header-wrapper space-x-10">
+						<div class="header__logo">
+							<a href="/">
+								<img
+									class="header__logo"
+									id="logo_js"
+									src="assets/img/logos/egologo.png"
+									alt="logo"
+									/>
+							</a>
+						</div>
+						<!-- ==================  -->
+						<div class="header__menu">
+							<ul class="d-flex space-x-20">
+								<li class="has_popup">
+									<a class="color_black is_new" href="index.html"> Home <i class="ri-more-2-fill"></i></a>									
+								</li>															
+							</ul>
+						</div>
+						<!-- ================== -->
+						<div class="header__search">
+							<input type="text" placeholder="Search" />
+							<button class="header__result">
+								<i class="ri-search-line"></i>
+							</button>
+						</div>
+						<div class="d-flex align-items-center space-x-20">
+							<div class="header__notifications">
+								<div class="js-notifications-icon">
+									<i class="ri-notification-3-line"></i>
+								</div>
+								<div class="notifications_popup space-y-20">
+									<div class="d-flex justify-content-between">
+										<h5> Notifications</h5>
+										<a href="Activity.html" class="badge color_white">View all</a>
+									</div>
+									<div
+										class="item
+										space-x-20
+										d-flex
+										justify-content-between
+										align-items-center">
+										<img
+											class="thumb"
+											src="assets/img/notifications/1.png"
+											alt="..."
+											/>
+										<div class="details">
+											<a href="activity.html"> <h6>Money revieved</h6> </a>
+											<p>0.6 AVAX</p>
+										</div>
+										<span class="circle"></span>
+									</div>
+								</div>
+							</div>
+							<div class="header__avatar">
+								<div class="price">
+									<span>2.45 <strong>AVAX</strong> </span>
+								</div>
+								<img
+									class="avatar"
+									src="assets/img/avatars/avatar_2.png"
+									alt="avatar"
+									/>
+								<div class="avatar_popup space-y-20">
+									<div class="d-flex align-items-center justify-content-between">
+										<span> 13b9ebda035r178... </span>
+										<a href="/" class="ml-2">
+											<i class="ri-file-copy-line"></i>
+										</a>
+									</div>
+									<div class="d-flex align-items-center space-x-10">
+										<img
+											class="coin"
+											src="assets/img/logos/coin.svg"
+											alt="/"
+											/>
+										<div class="info">
+											<p class="text-sm font-book text-gray-400">Balance</p>
+											<p class="w-full text-sm font-bold text-green-500">16.58 AVAX</p>
+										</div>
+									</div>
+									<div class="hr"></div>
+									<div class="links space-y-10">
+										<a href="#">
+											<i class="ri-landscape-line"></i> <span> My items</span>
+										</a>
+										<a href="edit_profile.html">
+											<i class="ri-pencil-line"></i> <span> Edit Profile</span>
+										</a>
+										<a href="#">
+											<i class="ri-logout-circle-line"></i> <span> Logout</span>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="header__btns">
+								<a class="btn btn-primary btn-sm" href="Upload-type.html">Create</a>
+							</div>
+							<div class="header__burger js-header-burger"></div>
+						</div>
+						<div class="header__mobile js-header-mobile">
+							<div class="header__mobile__menu space-y-40">
+								<ul class="d-flex space-y-20">
+									<li> <a class="color_black" href="Marketplace.html"> Marketplace</a> </li>
+									<li> <a class="color_black" href="Collections.html"> Collections</a> </li>
+									<li> <a class="color_black" href="Profile.html"> Profile</a> </li>
+									<li> <a class="color_black" href="Creators.html"> Creators</a> </li>
+						
+								</ul>
+								<div class="space-y-20">
+									<div class="header__search in_mobile w-full">
+										<input type="text" placeholder="Search" />
+										<button class="header__result">
+											<i class="ri-search-line"></i>
+										</button>
+									</div>
+									<a class="btn btn-grad btn-sm" href="Connect-wallet.html">Connect
+										wallet</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header><div class="hero__creators">
+			    <div class="container">
+			        <div class="row align-items-center justify-content-between">
+			            <div class="col-lg-6">
+			                <div class="space-y-20">
+			                    <h1>TOP COLLECTIONS TODAY</h1>
+			                    <p class="hero__text">
+			                        Live statistics across the board
+			                    </p>
+			                </div>
+			            </div>
+			            <div class="col-lg-auto">
+			                <a class="btn btn-dark" href=""> RESETS AT 00:00 UTC
+			                </a>
+			            </div>
+			        </div>
+			
+			    </div>
+			</div><div class="container">
+				<div class="row">
+					<div class="col-lg-3">
+						<div class="creator_item creator_card space-y-10 is_big">
+							<div class="avatars flex-column space-y-10">
+								<div class="media has_border">
+									<a href="Profile.html">
+										<img src="assets/img/logos/download.png"
+											alt="Avatar" class="avatar avatar-md">
+									</a>
+									<div class="has_number">
+										1
+									</div>
+								</div>
+								<div class="text-center">
+									<a href="Profile.html">
+										<p class="avatars_name large color_black">JOEPEGS</p>
+									</a>
+									<span class="sales color_text"> $16,180 </span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3">
+						<div class="creator_item creator_card space-y-10 is_big">
+							<div class="avatars flex-column space-y-10">
+								<div class="media has_border">
+									<a href="Profile.html">
+										<img src="assets/img/logos/logoAnimation.svg"
+											alt="Avatar" class="avatar avatar-md">
+									</a>
+									<div class="has_number">
+										2
+									</div>
+								</div>
+								<div class="text-center">
+									<a href="Profile.html">
+										<p class="avatars_name large color_black"> NFTRADE </p>
+									</a>
+									<span class="sales color_text">$5,584</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3">
+						<div class="creator_item creator_card space-y-10 is_big">
+							<div class="avatars flex-column space-y-10">
+								<div class="media has_border">
+									<a href="Profile.html">
+										<img src="assets/img/logos/campfire_logo_black.webp"
+											alt="Avatar" class="avatar avatar-md">
+									</a>
+									<div class="has_number">
+										3
+									</div>
+								</div>
+								<div class="text-center">
+									<a href="Profile.html">
+										<p class="avatars_name large color_black">CAMPFIRE</p>
+									</a>
+									<span class="sales color_text">$3,995</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3">
+						<div class="creator_item creator_card space-y-10 is_big">
+							<div class="avatars flex-column space-y-10">
+								<div class="media has_border">
+									<a href="Profile.html">
+										<img src="assets/img/logos/favicon.ico"
+											alt="Avatar" class="avatar avatar-md">
+									</a>
+									<div class="has_number">
+										4
+									</div>
+								</div>
+								<div class="text-center">
+									<a href="Profile.html">
+										<p class="avatars_name large color_black">KALAO</p>
+									</a>
+									<span class="sales color_text">$3,673</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+			<div class="section__creators mt-100">
+				<div class="container">
+					<div class="space-y-30">
+						<div class="section_head">
+							<div class="row justify-content-between
+								align-items-center">
+								<div class="col-lg-auto">
+									<h2 class="section__title">Discover all Creators</h2>
+								</div>
+								<div class="col-lg-4">
+									<div class="search">
+										<input type="text" placeholder="Search"
+											class="bg_white" style="background:white
+											!important">
+										<button class="result">
+											<i class="ri-search-line"></i>
+										</button>
+									</div>
+								</div>
+			
+								<div class="col-lg-auto">
+									<div class="dropdown">
+										<button class="btn btn-primary btn-sm
+											dropdown-toggle"
+											type="button"
+											data-toggle="dropdown" aria-haspopup="true"
+											aria-expanded="false">
+											Recent Active
+										</button>
+										<div class="dropdown-menu">
+											<a class="dropdown-item" href="#">Action</a>
+											<a class="dropdown-item" href="#">Another action</a>
+											<a class="dropdown-item" href="#">SomAVAXing else
+												here</a>
+										</div>
+									</div>
+								</div>
+			
+							</div>
+						</div>
+						<div class="section__body space-y-20">
+							<div class="row mb-20_reset">
+								<div class="col-lg-4">
+									<div class="creator_item creator_card space-y-20 mb-20">
+										<div class="avatars flex-column space-y-10">
+											<div class="cover">
+												<img
+													src="assets/img/items/cover_1.png"
+													alt="Avatar" class="img-fluid">
+											</div>
+											<div class="media">
+												<a href="Profile.html">
+													<img
+														src="assets/img/avatars/avatar_5.png"
+														alt="Avatar" class="avatar
+														avatar-md">
+												</a>
+											</div>
+											<div class="details text-center">
+												<div>
+													<p class="color_black txt_lg">191
+														<span
+															class="txt_sm">AVAX</span></p>
+													<p class="color_black txt_sm">Sold</p>
+												</div>
+												<div>
+													<p class="color_black txt_lg">345</p>
+													<p class="color_black txt_sm">Collections</p>
+												</div>
+												<div>
+													<p class="color_black txt_lg">17,005</p>
+													<p class="color_black txt_sm">Views</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-4">
+									<div class="creator_item creator_card space-y-20 mb-20">
+										<div class="avatars flex-column space-y-10">
+											<div class="cover">
+												<img
+													src="assets/img/items/cover_2.png"
+													alt="Avatar" class="img-fluid">
+											</div>
+											<div class="media">
+												<a href="Profile.html">
+													<img
+														src="assets/img/avatars/avatar_6.png"
+														alt="Avatar" class="avatar
+														avatar-md">
+												</a>
+											</div>
+											<div class="details text-center">
+												<div>
+													<p class="color_black txt_lg">142
+														<span
+															class="txt_sm">AVAX</span></p>
+													<p class="color_black txt_sm">Sold</p>
+												</div>
+												<div>
+													<p class="color_black txt_lg">255</p>
+													<p class="color_black txt_sm">Collections</p>
+												</div>
+												<div>
+													<p class="color_black txt_lg">14,045</p>
+													<p class="color_black txt_sm">Views</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-4">
+									<div class="creator_item creator_card space-y-20 mb-20">
+										<div class="avatars flex-column space-y-10">
+											<div class="cover">
+												<img
+													src="assets/img/items/cover_3.png"
+													alt="Avatar" class="img-fluid">
+											</div>
+											<div class="media">
+												<a href="Profile.html">
+													<img
+														src="assets/img/avatars/avatar_7.png"
+														alt="Avatar" class="avatar
+														avatar-md">
+												</a>
+											</div>
+											<div class="details text-center">
+												<div>
+													<p class="color_black txt_lg">150
+														<span
+															class="txt_sm">AVAX</span></p>
+													<p class="color_black txt_sm">Sold</p>
+												</div>
+												<div>
+													<p class="color_black txt_lg">345</p>
+													<p class="color_black txt_sm">Collections</p>
+												</div>
+												<div>
+													<p class="color_black txt_lg">20,033</p>
+													<p class="color_black txt_sm">Views</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-4">
+									<div class="creator_item creator_card space-y-20 mb-20">
+										<div class="avatars flex-column space-y-10">
+											<div class="cover">
+												<img
+													src="assets/img/items/cover_4.png"
+													alt="Avatar" class="img-fluid">
+											</div>
+											<div class="media">
+												<a href="Profile.html">
+													<img
+														src="assets/img/avatars/avatar_8.png"
+														alt="Avatar" class="avatar
+														avatar-md">
+												</a>
+											</div>
+											<div class="details text-center">
+												<div>
+													<p class="color_black txt_lg">87
+														<span
+															class="txt_sm">AVAX</span></p>
+													<p class="color_black txt_sm">Sold</p>
+												</div>
+												<div>
+													<p class="color_black txt_lg">142</p>
+													<p class="color_black txt_sm">Collections</p>
+												</div>
+												<div>
+													<p class="color_black txt_lg">23,575</p>
+													<p class="color_black txt_sm">Views</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-4">
+									<div class="creator_item creator_card space-y-20 mb-20">
+										<div class="avatars flex-column space-y-10">
+											<div class="cover">
+												<img
+													src="assets/img/items/cover_5.png"
+													alt="Avatar" class="img-fluid">
+											</div>
+											<div class="media">
+												<a href="Profile.html">
+													<img
+														src="assets/img/avatars/avatar_9.png"
+														alt="Avatar" class="avatar
+														avatar-md">
+												</a>
+											</div>
+											<div class="details text-center">
+												<div>
+													<p class="color_black txt_lg">198
+														<span
+															class="txt_sm">AVAX</span></p>
+													<p class="color_black txt_sm">Sold</p>
+												</div>
+												<div>
+													<p class="color_black txt_lg">321</p>
+													<p class="color_black txt_sm">Collections</p>
+												</div>
+												<div>
+													<p class="color_black txt_lg">12,024</p>
+													<p class="color_black txt_sm">Views</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-4">
+									<div class="creator_item creator_card space-y-20 mb-20">
+										<div class="avatars flex-column space-y-10">
+											<div class="cover">
+												<img
+													src="assets/img/items/cover_6.png"
+													alt="Avatar" class="img-fluid">
+											</div>
+											<div class="media">
+												<a href="Profile.html">
+													<img
+														src="assets/img/avatars/avatar_10.png"
+														alt="Avatar" class="avatar
+														avatar-md">
+												</a>
+											</div>
+											<div class="details text-center">
+												<div>
+													<p class="color_black txt_lg">234
+														<span
+															class="txt_sm">AVAX</span></p>
+													<p class="color_black txt_sm">Sold</p>
+												</div>
+												<div>
+													<p class="color_black txt_lg">345</p>
+													<p class="color_black txt_sm">Collections</p>
+												</div>
+												<div>
+													<p class="color_black txt_lg">12,053</p>
+													<p class="color_black txt_sm">Views</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+			
+						</div>
+			
+					</div>
+				</div>
+			</div>
+			
+			<footer class="footer__1">
+				<div class="container">
+					<p class="copyright text-center">
+						Copyright © 2021. Created with love by Pixeldust.
+					</p>
+				</div>
+			</footer>		</div>
+		<!-- 🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈🌈 SCRIPTS -->
+		<script src="assets/js/jquery-3.6.0.js"></script>
+		<script src="assets/js/bootstrap.bundle.min.js"></script>
+		<script src="assets/js/swiper-bundle.min.js"></script>
+		<script src="assets/js/gsap.min.js"></script>
+		<script src="assets/js/ScrollTrigger.min.js"></script>
+		<script src="assets/js/sticky-sidebar.js"></script>
+		<script src="assets/js/script.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+		<script src="https://unpkg.com/moralis/dist/moralis.js"></script>
+		<script src="assets/js/nft.js"></script>
+		<script
+			src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+	</body>
+</html>
