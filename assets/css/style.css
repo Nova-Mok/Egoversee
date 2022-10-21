@@ -11284,7 +11284,7 @@ input[type="submit"][disabled].btn-white:hover {
 
 button[disabled].btn-primary:hover,
 input[type="submit"][disabled].btn-primary:hover {
-  background-color: #566ffe;
+  background-color: #ff00f2;
   color: #fff;
 }
 
@@ -11311,7 +11311,7 @@ input[type="submit"].btn-outline:hover,
 input[type="submit"].btn-outline:focus,
 a.btn-outline:hover,
 a.btn-outline:focus {
-  background-color: #9457eb;
+  background-color: #8A2BE2;
   color: #fff;
 }
 
@@ -11492,17 +11492,18 @@ a.btn-outline.disabled:hover {
   width: 15rem;
 }
 
+
 .btn-grad {
   color: #ffffff;
   border: none !important;
   -webkit-transition: all 0.4s ease-in-out !important;
   transition: all 0.4s ease-in-out !important;
-  background: radial-gradient(100% 100% at 53.13% 0%, #31e7fa 0%, #4477ff 52.6%, #db74ff 100%);
+  background: #8A2BE2;
 }
 
 .btn-grad:hover {
   outline: none;
-  background: radial-gradient(100% 100% at 53.13% 0%, #31e7fa 0%, #4477ff 52.6%, #db74ff 100%);
+  background: #00FFC2;
   border: solid 2px #566ffe;
 }
 
@@ -15013,7 +15014,9 @@ label:active:after {
 
 .header__1 .header__btns {
   display: block;
+  
 }
+
 
 @media screen and (max-width: 991px) {
   .header__1 .header__btns {
